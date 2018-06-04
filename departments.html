@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <!-- =====  BASIC PAGE NEEDS  ===== -->
+  <meta charset="utf-8">
+  <title>Hostipal Top Rank</title>
+  <!-- =====  SEO MATE  ===== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="2 Days">
+  <meta name="robots" content="ALL">
+  <meta name="rating" content="8 YEARS">
+  <meta name="Language" content="en-us">
+  <meta name="GOOGLEBOT" content="NOARCHIVE">
+  <!-- =====  MOBILE SPECIFICATION  ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!-- =====  CSS  ===== -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+  <link rel="stylesheet" type="text/css" href="css/pagination.css"/>
+  <link rel="stylesheet" type="text/css" href="css/layer.css"/>
+</head>
+
+<body>
+  <!-- =====  LODER  ===== -->
+  <div class="loder"></div>
+  <div class="wrapper">
+    <!-- =====  HEADER START  ===== -->
+    <header id="header">
+      <div class="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+              <ul id="menu" class="nav navbar-nav">
+                <li> <a href="list.html">医院列表</a></li>
+                <li> <a href="statistics.html">医院排行</a></li>
+                <li> <a href="input.html">数据维护</a></li>
+                <li> <a href="helper.html">使用攻略</a></li>
+              </ul>
+            </div>
+            <!-- /.nav-collapse -->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <div class="container">
+      <div class="row " id="detail_main">
+        <div id="column-left" class="col-sm-4 col-md-4 col-lg-3 mtb_30">
+          <div class="Testimonial left-sidebar-widget mb_50">
+            
+            <div class="client owl-carousel text-center pt_10">
+              <div class="item client-detail">
+                <div class="client-title  mt_30 mb_10"><strong><span id="hospitalName_span"></span></strong></div>
+                <div class="client-designation mb_10">医院类型：<span id="hospitalType_span"></span></div>
+                <div class="client-designation mb_10">医院等级：<span id="hospitalLevel_span"></span></div>
+                <div class="client-designation mb_10">经济类型：<span id="economicType_span"></span></div>
+                <div class="client-designation mb_10">医院地址：<span id="hospitalLocation_span"></span></div>
+                <p style="text-align: left;"><i class="fa fa-quote-left" aria-hidden="true"></i><span id="hospitalDesc_span"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-9 mtb_30">
+          <!-- =====  BANNER STRAT  ===== -->
+          <div class="breadcrumb ptb_20">
+            <h1>科室列表</h1>
+            <ul>
+              <li><a href="list.html">医院列表</a></li>
+              <li class="active" id="hospital_li"></li>
+            </ul>
+          </div>
+          <!-- =====  BREADCRUMB END===== -->
+          <div class="row" id="department_list_div">
+            <div id="department_warning" style="text-align: center;display:none;"><a href="input.html?index=3">添加科室</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id = "detail_loading" style="text-align: center;">
+          <img src="images/loading/loading_big.gif">
+      </div>
+      <div id="brand_carouse" class="ptb_30 text-center">
+        <div class="type-01">
+          <div class="heading-part mb_20 ">
+            <h2 class="main_title">其他相关作品</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="brand owl-carousel ptb_20">
+                <div class="item text-center">
+                  <a href="https://nasdevtravel.github.io/Traveller/index.html" title="寻找旅行家">
+                    <img src="images/other/traveller.png" alt="寻找旅行家" class="img-responsive" style="width: 148px;height: 148px;" />
+                  </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://nasdevxiaojiujiu.github.io/MovieStore/movie.html" title="Movie Store">
+                      <img src="images/other/movie.jpg" alt="Movie Store" class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://martincodesun.github.io/JockerMonkey/index.html" title='猴子请来的“梗”'>
+                      <img src="images/other/jock.png" alt='猴子请来的“梗”' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://nasdeveloper.github.io/MemoryBox/" title="记忆保险柜">
+                      <img src="images/other/memory.png" alt='记忆保险柜' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://sjdzzz.github.io/StaffEvaluation/index.html"  title="菁英网s">
+                      <img src="images/other/jinying.png" alt='菁英网' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://jadonsun.github.io/SubWayInfoSys/" title="地铁房价查询">
+                      <img src="images/other/house.png" alt='地铁房价查询' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div class="footer pt_60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-block">
+            <div class="content_footercms_right">
+              <div class="footer-contact">
+                <div class="footer-logo mb_40"> <a href="list.html"> <img src="images/footer-logo.png" alt="HealthCare"> </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 footer-block" style="width: 65%;">
+            <h6 class="footer-title ptb_20">关于我们</h6>
+            <ul>
+              <li><a>关于我们：追梦者团队，由一群来自不同区域的区块链爱好者组合而成，希望能够把最美好的事物留在星云上，留给星云用户。</a></li>
+              <li><a>联系电话：15130288383</a></li>
+              <li><a>联系邮箱：1289418330@qq.com</a></li>
+              <li><a>地址：南山区， 深圳市， 广东省</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom mt_60 ptb_10">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="copyright-part">Copyright &copy; 2018.星云社区爱好者，基于星云链的智慧医疗.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+  </div>
+  <a id="scrollup">Scroll</a>
+  <script src="js/jQuery_v3.1.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/layer.js"></script>
+  <script src="lib/template.js"></script>
+  <script src="lib/nebulas.js"></script>
+  <script src="lib/nebPay.js"></script>
+  <script src="js_back/GoldSunApi.js"></script>
+  <script src="js_back/data.js"></script>
+  <script src="js_back/contentscript_j.js"></script>
+  <script src="departments.js"></script>
+  <script src="lib/urlParm.js"></script>
+  <script src="lib/pagination.min.js"></script>
+  <script src="PictureSaveAndRead.js"></script>
+
+  <script id="department_list_t" type="text/html">
+    <%if(list.length > 0 ){%>
+    <%for(var i = 0; i < list.length; i++) {%>
+      <div class="product-layout product-list col-xs-12 department_item_div">
+        <div class="item">
+          <div class="product-thumb clearfix mb_30">
+            <div class="depItem" id="departmentOf<%:=list[i].id%>">
+              <div class="depName"><span ><%:=list[i].name%></span></div>
+              <p class="product-desc"> <%:=list[i].description%></p>
+              <div class="button-group text-center">
+                <a class="goodbtn showButton" id="good_<%:=list[i].id%>" href="javascript:;" onclick="goodClick('<%:=list[i].id%>')" title="赞一个"><span class="showCount goodCount"><%:=list[i].goodCount%></span></a>
+                <a class="badbtn showButton" id="bad_<%:=list[i].id%>" href="javascript:;" onclick="badClick('<%:=list[i].id%>')" title="踩一个"><span class="showCount badCount"><%:=list[i].badCount%></span></a>
+                <a class="commentbtn showButton" id="comment_<%:=list[i].id%>" href="javascript:;" onclick="commentClick('<%:=list[i].id%>')" title="评论"><span class="showCount commentCount"><%:=list[i].commentCount%></span></a>
+                <a class="bannerbtn showButton" id="banner_<%:=list[i].id%>" href="javascript:;" onclick="bannerClick('<%:=list[i].id%>')" title="锦旗"><span class="showCount bannerCount"><%:=list[i].bannerCount%></span></a>
+                <span class="scorebtn showButton" title="评分"><span class="showCount scoreCount"><%:=list[i].scoreCount%></span></span>
+              </div>
+              <div id="commentOf<%:=list[i].id%>" class="commentDiv showOrHide" style="display: none;">
+                <div class="product-layout product-list bdtop">
+                  <div class="pop">
+                    <label class="control-label" for="input-hospitalName">姓名</label>
+                    <input name="username" value="" class="form-control popInput" type="text">
+                  </div>
+                  <div class="">
+                    <label class="control-label" for="select-economicType">评分</label>
+                    <select name="score" class="selectpicker form-control popInput">
+                      <option>-3</option>
+                      <option>-2</option>
+                      <option>-1</option>
+                      <option selected>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                  <div class="">
+                    <label class="control-label" for="input-hospitalDesc">内容</label>
+                    <textarea name="content" rows="3" class="form-control popInput"></textarea>
+                  </div>
+                  <div class="submitDiv" >
+                    <a href="javascript:;" onclick="commitComment('<%:=list[i].id%>')" >提交</a>
+                  </div>
+                </div>
+                <div id="comment_list_<%:=list[i].id%>">
+                  
+                </div>
+                <div id="comment_loading_<%:=list[i].id%>" style= "text-align:center; display:none;">
+                    <img src="images/loading/loading_org.gif">
+                </div>
+
+                <div style="width:100%;clear:both;text-align: right;">
+                  <div id="pagination_comment_<%:=list[i].id%>" class="pagination"></div>
+                </div>
+                
+              </div>
+              <div id="bannerOf<%:=list[i].id%>" class="showOrHide" style="display: none;">
+                <div class="product-layout product-list bdtop">
+                  <div class="pop">
+                    <label class="control-label" for="input-username">姓名</label>
+                    <input name="username" value="" class="form-control popInput" type="text">
+                  </div>
+                  <div class="pop">
+                    <label class="control-label" for="input-title">标题</label>
+                    <input name="title" value="" class="form-control popInput" type="text">
+                  </div>
+                  <div class="pop" style="padding-top:5px;">
+                    <label class="control-label" for="input-title" style="padding-right:5px;">上传锦旗</label>
+                    <img onclick="loadFlagImg(this)" id="imgshow_<%:=list[i].id%>" name="img-show" src="images/upimg.png" width="100" height="133" style="cursor:pointer;"/>
+                    <input type="file" id="img_<%:=list[i].id%>" onchange="changeFlagImg(this)" name="img-input" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple="" class="file" style="display:none;">
+                  </div>
+                  <div class="submitDiv" >
+                    <a href="javascript:;" onclick="commitBanner('<%:=list[i].id%>')" >赠送</a>
+                  </div>
+                </div>
+                <div id="banner_list_<%:=list[i].id%>">
+                  
+                </div>
+
+                <div id="banner_list_loading_<%:=list[i].id%>" style= "text-align:center; display:none;">
+                    <img src="images/loading/loading_org.gif">
+                </div>
+
+                <div style="width:100%;clear:both;text-align: right;">
+                  <div id="pagination_banner_<%:=list[i].id%>" class="pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <%}}%>
+  
+  </script>
+
+  <script id="comment_list_t" type="text/html">
+    <%if(list.length > 0 ){%>
+    <%for(var i = 0; i < list.length; i++) {%>
+      <div class="product-layout product-list commentItemDiv">
+        <div class="bdtop clearfix ">
+          <div class="commentTitle">
+            <span>评论者昵称：</span><span><%:=list[i].commentName%>   </span>
+            <span>评分：</span><span><%:=list[i].score%>分   </span>
+            <span>时间：</span><span class="ml_10"><%:=list[i].commentTime%></span>
+          </div>
+          <p class="product-desc"> <%:=list[i].content%></p>
+        </div>
+      </div>
+    <%}}%>
+  
+  </script>
+  <script id="banner_list_t" type="text/html">
+    <%if(list.length > 0 ){%>
+    <%for(var i = 0; i < list.length; i++) {%>
+      <div class="product-layout product-list bannerItemDiv"style="width:33.33%">
+        <div class="bdtop clearfix ">
+          <div>
+            <span>赠送者：<%:=list[i].username%></span>
+          </div>
+          <img src="<%:=list[i].imgBase64%>" style="max-width:150px;max-height:200px;"/>
+          <div class="bannerTitle" style="text-align:left;">
+            <span>锦旗标题:</span><span><%:=list[i].title%></span>
+          </div>
+          <div class="bannerTitle" style="text-align:left;">
+            <span>赠送时间:</span><span class="ml_10"><%:=list[i].sendTime%></span>
+          </div>
+        </div>
+      </div>
+    <%}}%>
+  
+  </script>
+  
+  <div id="comment_warning" style="display: none;"><div class="commentItemDiv">暂无评论</div></div>
+  <div id="banner_warning" style="display: none;"><div class="bannerItemDiv">暂无锦旗</div></div>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <!-- =====  BASIC PAGE NEEDS  ===== -->
+  <meta charset="utf-8">
+  <title>Hostipal Top Rank</title>
+  <!-- =====  SEO MATE  ===== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="2 Days">
+  <meta name="robots" content="ALL">
+  <meta name="rating" content="8 YEARS">
+  <meta name="Language" content="en-us">
+  <meta name="GOOGLEBOT" content="NOARCHIVE">
+  <!-- =====  MOBILE SPECIFICATION  ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!-- =====  CSS  ===== -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+  <link rel="stylesheet" type="text/css" href="css/layer.css"/>
+</head>
+
+<body class="shop-detail">
+  <!-- =====  LODER  ===== -->
+  <div class="loder"></div>
+  <div class="wrapper">
+    <!-- =====  HEADER START  ===== -->
+    <header id="header">
+      <div class="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+              <ul id="menu" class="nav navbar-nav">
+                <ul id="menu" class="nav navbar-nav">
+                <li> <a href="list.html">医院列表</a></li>
+                <li> <a href="statistics.html">医院排行</a></li>
+                <li> <a href="input.html">数据维护</a></li>
+                <li> <a href="helper.html">使用攻略</a></li>
+              </ul>
+            </div>
+            <!-- /.nav-collapse -->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <div class="container">
+      <div class="row ">
+        <div class="mtb_30">
+          <!-- =====  BANNER STRAT  ===== -->
+          <div class="breadcrumb ptb_20">
+            <h1>数据维护</h1>
+            <ul>
+              <li><a href="list.html">医院列表</a></li>
+              <li class="active">数据维护</li>
+            </ul>
+          </div>
+          <!-- =====  BREADCRUMB END===== -->
+          <div class="row">
+            <div class="col-md-12">
+              <div id="exTab5" class="mtb_30">
+                <ul class="nav nav-tabs" id="tab_index">
+                  <li class="active"> <a href="#1c" onclick="selectPage(1)" data-toggle="tab">添加城市</a> </li>
+                  <li><a href="#2c" onclick="selectPage(2)" data-toggle="tab">添加管理员</a> </li>
+                  <li><a href="#3c" onclick="selectPage(3)" data-toggle="tab">添加医院</a> </li>
+                  <li><a href="#4c" onclick="selectPage(4)" data-toggle="tab">添加科室</a> </li>
+                </ul>
+                <div class="tab-content mt_20"  id="input_main">
+                  <div class="tab-pane active" id="1c">
+                    <form class="form-horizontal">
+                      <div class="form-group required">
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-cityNames">城市名称</label>
+                          <textarea name="cityName" rows="5" id="input-cityNames" class="form-control"></textarea>
+                          <div class="help-block"><span class="text-danger">提示:</span> 一次添加多个城市时用英文逗号分隔!如“北京,上海,深圳”</div>
+                          <div class="help-block"><span class="text-danger">提示:</span> 只有管理员才能添加城市，您如果想添加城市，请邮件联系1289418330@qq.com添加管理员权限</div>
+                        </div>
+                      </div>
+                      <div class="form-group required">
+                        <div class="col-md-6">
+                          <div class="buttons pull-right">
+                            <a class="btn btn-md btn-link" id="submit_1c">提交</a>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="2c">
+                    <form class="form-horizontal">
+                      <div class="form-group required">
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-admin">管理员标识</label>
+                          <textarea name="admin" rows="5" id="input-admin" class="form-control"></textarea>
+                          <div class="help-block"><span class="text-danger">提示:</span> 一次添加多个管理员时用“,”分隔!如“user01,user02,user03”</div>
+                          <div class="help-block"><span class="text-danger">提示:</span> 只有超级管理员(目前是项目开发者)有权限添加，您无权限添加</div>
+                        </div>
+                      </div>
+                      <div class="form-group required">
+                        <div class="col-md-6">
+                          <div class="buttons pull-right">
+                            <a class="btn btn-md btn-link" id="submit_2c">提交</a>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="3c">
+                    <form class="form-horizontal" id="form_3c">
+                      <div class="form-group required hospitalDiv">
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="select-cityList_3c">选择城市</label>
+                          <select name="citySel" id="select-cityList_3c" class="selectpicker form-control">
+                            <option>北京</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-hospitalName">医院名称</label>
+                          <input name="hospitalName" value="" id="input-hospitalName" class="form-control" type="text">
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="select-hospitalLevel">医院等级</label>
+                          <select name="hospitalLevelSel" id="select-hospitalLevel" class="selectpicker form-control">
+                            <option>三甲</option>
+                            <option>二甲</option>
+                            <option>三乙</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="select-hospitalType">医院类型</label>
+                          <select name="hospitalTypeSel" id="select-hospitalType" class="selectpicker form-control">
+                            <option>综合性医院</option>
+                            <option>儿童医院</option>
+                            <option>妇幼医院</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="select-economicType">经济类型</label>
+                          <select name="economicTypeSel" id="select-economicType" class="selectpicker form-control">
+                            <option>国有</option>
+                            <option>民办</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="control-label" for="select-cityList_3c">医院地址</label>
+                          <input name="hospitalLocation" value="" id="input-hospitalLocation" class="form-control" type="text">
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-hospitalDesc">医院简介</label>
+                          <textarea name="hospitalDesc" id="input-hospitalDesc" rows="5" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      
+                      <div title="添加科室" class="form-group required addDiv text-center" onclick="addDepartment_3c()">+
+                      </div>
+                    </form>
+                    <div class="form-group required">
+                        <div class="col-md-6">
+                          <div class="buttons pull-right">
+                            <a class="btn btn-md btn-link" id="submit_3c">提交</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane" id="4c">
+                    <form class="form-horizontal" id="form_4c">
+                      <div class="form-group required hospitalDiv">
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="select-cityList_4c">选择城市</label>
+                          <select name="citySel" id="select-cityList_4c" onchange="changeCity()" class="selectpicker form-control">
+                          </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="select-hospitalList">选择医院</label>
+                          <select name="hospitalSel" id="select-hospitalList" class="selectpicker form-control">
+                            <option>协和医院</option>
+                            <option>Medium</option>
+                            <option>Large</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group required departmentDiv">
+                        <div class="col-sm-12 col-md-6">
+                          <label class="control-label" for="input-hospitalName">科室名称</label>
+                          <input name="departmentName" value="" class="form-control" type="text">
+                        </div>
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-department_4c">科室简介</label>
+                          <textarea name="departmentDesc" rows="5" class="form-control"></textarea>
+                        </div>
+                      </div>
+                      <div title="添加科室" class="form-group required addDiv text-center" onclick="addDepartment_4c()">+
+                      </div>
+                      
+
+                    </form>
+                    <div class="form-group required">
+                        <div class="col-md-6">
+                          <div class="buttons pull-right">
+                            <a class="btn btn-md btn-link" id="submit_4c">提交</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row" id="input_main_loading" style="text-align: center;display: none;">
+                    <img src="images/loading/loading_big.gif">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="brand_carouse" class="ptb_30 text-center">
+        <div class="type-01">
+          <div class="heading-part mb_20 ">
+            <h2 class="main_title">其他相关作品</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="brand owl-carousel ptb_20">
+                <div class="item text-center">
+                  <a href="https://nasdevtravel.github.io/Traveller/index.html" title="寻找旅行家">
+                    <img src="images/other/traveller.png" alt="寻找旅行家" class="img-responsive" style="width: 148px;height: 148px;" />
+                  </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://nasdevxiaojiujiu.github.io/MovieStore/movie.html" title="Movie Store">
+                      <img src="images/other/movie.jpg" alt="Movie Store" class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://martincodesun.github.io/JockerMonkey/index.html" title='猴子请来的“梗”'>
+                      <img src="images/other/jock.png" alt='猴子请来的“梗”' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://nasdeveloper.github.io/MemoryBox/" title="记忆保险柜">
+                      <img src="images/other/memory.png" alt='记忆保险柜' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://sjdzzz.github.io/StaffEvaluation/index.html"  title="菁英网s">
+                      <img src="images/other/jinying.png" alt='菁英网' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+                <div class="item text-center">
+                    <a href="https://jadonsun.github.io/SubWayInfoSys/" title="地铁房价查询">
+                      <img src="images/other/house.png" alt='地铁房价查询' class="img-responsive" style="width: 148px;height: 148px;" />
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div class="footer pt_60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-block">
+            <div class="content_footercms_right">
+              <div class="footer-contact">
+                <div class="footer-logo mb_40"> <a href="list.html"> <img src="images/footer-logo.png" alt="HealthCare"> </a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 footer-block" style="width: 65%;">
+            <h6 class="footer-title ptb_20">关于我们</h6>
+            <ul>
+              <li><a>关于我们：追梦者团队，由一群来自不同区域的区块链爱好者组合而成，希望能够把最美好的事物留在星云上，留给星云用户。</a></li>
+              <li><a>联系电话：15130288383</a></li>
+              <li><a>联系邮箱：1289418330@qq.com</a></li>
+              <li><a>地址：南山区， 深圳市， 广东省</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom mt_60 ptb_10">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="copyright-part">Copyright &copy; 2018.星云社区爱好者，基于星云链的智慧医疗.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+  </div>
+  <a id="scrollup">Scroll</a>
+  
+  <script src="js/jQuery_v3.1.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/bootstrap-notify.js"></script>
+  <script src="lib/template.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/layer.js"></script>
+  <script src="js_back/GoldSunApi.js"></script>
+  <script src="js_back/data.js"></script>
+  <script src="js_back/contentscript_j.js"></script>
+  <script src="input.js"></script>
+  <script src="lib/urlParm.js"></script>
+
+  <div id="template_department" style="display: none;">
+    <div class="form-group required departmentDiv">
+      <div class="col-sm-12 col-md-6">
+        <label class="control-label" for="input-hospitalName">科室名称</label>
+        <input name="departmentName" value="" class="form-control" type="text">
+      </div>
+      <div class="col-sm-12">
+        <label class="control-label" for="input-department_3c">科室简介</label>
+        <textarea name="departmentDesc" rows="5" class="form-control"></textarea>
+      </div>
+      <div class="col-sm-12 delDiv">
+        <a href="javascript:;" onclick="delDepartment(this)">X</a>
+      </div>
+    </div>
+  </div>
+
+  <script id="city_list_t" type="text/html">
+    <%if(list.length > 0 ){%>
+    <%for(var i = 0; i < list.length; i++) {%>
+      <option value="<%:=list[i].id %>"><%:=list[i].name %></option>
+    <%}}%>
+  
+  </script> 
+  <script id="hospital_list_t" type="text/html">
+    <%if(list.length > 0 ){%>
+    <%for(var i = 0; i < list.length; i++) {%>
+      <option value="<%:=list[i].id %>"><%:=list[i].name %></option>
+    <%}}%>
+  
+  </script> 
+  
+</body>
+
+</html>

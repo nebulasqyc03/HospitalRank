@@ -1,0 +1,194 @@
+.hospitalDiv{
+	border: solid 1px #DDD;
+    padding-bottom: 10px;
+}
+.departmentDiv{
+	border: solid 1px #DDD;
+    padding-bottom: 10px;
+}
+.addDiv{
+	border: solid 1px #DDD;
+    padding-bottom: 10px;
+	height:50px;
+	line-height: 50px;
+	font-size: 50px;
+	cursor:pointer;
+}/*
+.addDiv span{
+	height:50px;
+	line-height: 50px;
+	font-size: 50px;
+}*/
+.delDiv{
+	position: absolute;
+    text-align: right;
+    right: 10px;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+}
+.showCount{
+	display: inline;
+
+}
+.product-list .product-thumb .button-group {
+    display: block;
+    transition: all 2s ease 0s;
+    text-align: left;
+}
+.product-thumb .button-group .showCount {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-decoration: inherit;
+}
+.product-thumb .button-group .showButton {
+	color:#666;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.product-thumb .button-group .showButton:hover{
+	color:#000;
+	text-decoration: underline;
+}
+.title_left{
+	width: 25%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+.text-left{
+	width: 75%;
+    float: left;
+    padding: 10px;
+}
+.depItem{
+	padding: 10px;
+}
+.depName{
+	color: #000;
+    font-weight: 700;
+}
+.bdtop{
+	padding:10px 20px;
+	border-top:solid 1px #ddd;
+}
+.commentItemDiv{
+	display:block;
+}
+.submitDiv{
+	text-align: center;
+    margin: 10px;
+}
+.submitDiv a{
+	background: #e74c3c none repeat scroll 0 0;
+    border-radius: 0;
+    color: #fff;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.bannerItemDiv{
+	width: 50%;
+    float: left;
+}
+.bannerTitle{
+	text-align: center;
+}
+.ml_5{
+	margin-left: 5px;
+}
+.ml_10{
+	margin-left: 10px;
+}
+/*.popInput{
+	background: #00000000;
+	color:#FFF;
+	border:solid 1px #666;
+}
+.popInput option{
+	background: #555555;
+	color:#FFF;
+}
+.pop input[type="text"]{
+	background: #00000000;
+	color:#FFF;
+	border:solid 1px #666;
+}
+.pop input[type="text"]:focus{
+	border:solid 1px #DDD;
+}
+.popInput:focus{
+	border:solid 1px #DDD;
+}*/
+textarea {
+    min-height: 100px;
+}
+
+.title_left{
+	width:25%;
+	float:left;
+}
+.title_left .title{
+	font-size: 16px;
+	font-weight: 700;
+}
+.title_left .into{
+	font-size: 12px;
+}
+.text_right{
+	width:75%;
+	float: right;
+}
+.product-thumb .button-group .showSpan{
+	color:#666;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.hospital-info span{
+	font-size: 14px;
+	font-weight: 700;
+}
+.hospital-desc{
+	display: block;
+}
+.hospital-desc span{
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.commentbtn{
+	background-image: url(../images/icons/comment2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px;
+}
+.goodbtn{
+	background-image: url(../images/icons/good2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px;
+}
+.badbtn{
+	background-image: url(../images/icons/bad2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px;
+}
+.bannerbtn{
+	background-image: url(../images/icons/banner2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px;
+}
+.scorebtn{
+	background-image: url(../images/icons/score2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px;
+}
