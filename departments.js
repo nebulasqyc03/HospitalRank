@@ -2,7 +2,7 @@
 
 'use strict';
 
-var dappAddress = "n1mDj7nuUyRM4BPodgWf8gGxvua6gg8Ne2w";
+var dappAddress = "n1hkd43zSDd33d9sCXrUoAH2ATjYC4eAndM";
 
 var NebPay = require("nebpay");     //https://github.com/nebulasio/nebPay
 var nebPay = new NebPay();

@@ -1,6 +1,6 @@
 "use strict";
 
-var superAdmin="n1RMP8pgASAXpB2ZG3aqotHBaH92697Saab";
+var superAdmin="n1TLgiKMWBZ4RjnB9E7AwXvKQTv4YxhzTk6";
 /**
 *城市实体
 */
