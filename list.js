@@ -137,5 +137,9 @@ function selectCity(cityId,cityName){
     $("#hospital_loading").show();
     listObj.getHospitalByCity(cityId);
 }
+
+function jumpDetailPage(id) {
+    location.href="departments.html?hospitalId=" + id;
+}
 initPage();
   

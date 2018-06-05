@@ -199,14 +199,14 @@
     <%if(list.length > 0 ){%>
     <%for(var i = 0; i < list.length; i++) {%>
       <div class="product-layout product-list col-xs-12 hospital_item_div">
-        <div class="item">
+        <div class="item" style="cursor:pointer;" onclick="jumpDetailPage('<%:=list[i].id%>')">
           <div class="product-thumb clearfix mb_30">
             <div class="depItem">
               <div class="title_left">
-                <a href="departments.html?hospitalId=<%:=list[i].id%>">
+                <!-- <a href="departments.html?hospitalId=<%:=list[i].id%>"> -->
                   <span class="title"><%:=list[i].name%></span><br>
                   <span class="info">科室(<%:=list[i].count%>)</span>
-                </a>
+                <!-- </a> -->
               </div>
               <div class="text_right">
                 <div class="hospital-info">
