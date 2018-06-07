@@ -122,7 +122,11 @@ ListShow.prototype = {
             },
             xAxis: {
                 type: 'category',
-                data: names
+                data: names,
+                axisLabel: {
+                    interval: 0,
+                    rotate: -20,
+                },
             },
             yAxis: {
                 type: 'value'
@@ -146,7 +150,11 @@ ListShow.prototype = {
             },
             xAxis: {
                 type: 'category',
-                data: names
+                data: names,
+                axisLabel: {
+                    interval: 0,
+                    rotate: -20,
+                },
             },
             yAxis: {
                 type: 'value'
