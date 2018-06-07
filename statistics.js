@@ -134,7 +134,10 @@ ListShow.prototype = {
             series: [{
                 data: scores,
                 type: 'bar'
-            }]
+            }],
+            grid: {
+                y2: 100
+            }
         };
         myChart.setOption(option);
     },
@@ -162,7 +165,10 @@ ListShow.prototype = {
             series: [{
                 data: banners,
                 type: 'bar'
-            }]
+            }],
+            grid: {
+                y2: 100
+            }
         };
         myChart.setOption(option);
     },
